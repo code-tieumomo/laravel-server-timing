@@ -55,6 +55,8 @@ return response(view('work-orders.show', compact('workOrder')))
     ]);
 ```
 
+![Image](./assets/example.png)
+
 ## Testing
 
 ```bash
