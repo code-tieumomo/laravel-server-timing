@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "code-tieumomo/laravel-server-timing",
+    "description": "A simple implementation of Server-Timing in Laravel.",
     "keywords": [
-        ":vendor_name",
+        "code-tieumomo",
         "laravel",
-        ":package_slug"
+        "laravel-server-timing"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/code-tieumomo/laravel-server-timing",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "code-tieumomo",
+            "email": "code.tieumomo@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "CodeTieumomo\\LaravelServerTiming\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "CodeTieumomo\\LaravelServerTiming\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -73,11 +72,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
-            }
+                "CodeTieumomo\\LaravelServerTiming\\LaravelServerTimingServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
