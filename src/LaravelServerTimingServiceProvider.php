@@ -22,7 +22,7 @@ class LaravelServerTimingServiceProvider extends PackageServiceProvider
     {
         Response::macro('serverTiming', function (array $data) {
             return $this->header('Server-Timing', collect($data)->map(function ($value, $key) {
-                return $key . ';desc="' . $value['desc'] . '";dur=' . $value['dur'];
+                return $key.';desc="'.$value['desc'].'";dur='.$value['dur'];
             })->implode(','));
         });
 
